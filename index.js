@@ -117,7 +117,7 @@
 
                 if ( err ) callback(err);
 
-                child_process.exec( "pdftk " + sourceFile + " fill_form " + tempFDF + " output " + destinationFile + " flatten", function (error, stdout, stderr) {
+                child_process.exec( "pdftk " + sourceFile + " fill_form " + tempFDF + " output " + destinationFile, function (error, stdout, stderr) {
 
                     if ( err ) {
                       console.log('exec error: ' + err);
